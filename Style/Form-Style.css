@@ -1,0 +1,183 @@
+/* For small screens */
+@media (max-width: 767px) {
+    /* Add your CSS styles for small screens here */
+  }
+  
+  /* For medium screens */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Add your CSS styles for medium screens here */
+  }
+  
+  /* For large screens */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* Add your CSS styles for large screens here */
+  }
+  
+  /* For extra-large screens */
+  @media (min-width: 1200px) {
+    /* Add your CSS styles for extra-large screens here */
+  }
+  
+  .container {
+    width: 100%; /* This makes the container take the full width of its parent */
+  }
+  
+  .column {
+    width: 50%; /* This makes the column take 50% width of its parent (two columns side by side) */
+  }
+  
+  
+
+
+
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(315deg, #000a1d, #00122f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container styles */
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 20px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    width: 400px;
+    max-width: 90%;
+    backdrop-filter: blur(15px);
+    animation: fadeInUp 0.8s ease;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Form styles */
+.login, .signup, .admin-login {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Common form header styles */
+.login h2, .signup h2, .admin-login h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Common label styles */
+.login label, .signup label, .admin-login label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+/* Common input styles */
+.login input, .signup input, .admin-login input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Common button styles */
+.login button, .signup button, .admin-login button {
+    background-color: #FF4D5A;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+/* Button hover styles */
+.login button:hover, .signup button:hover, .admin-login button:hover {
+    background-color: #E44B58;
+}
+
+/* Common link styles */
+.login a, .signup a, .admin-login a {
+    margin-top: 15px;
+    text-align: center;
+    color: #FF4D5A;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Link hover styles */
+.login a:hover, .signup a:hover, .admin-login a:hover {
+    color: #E44B58;
+}
+
+/* Specific styles for signup form */
+.signup button {
+    background-color: #FF5733;
+}
+
+.signup button:hover {
+    background-color: #FF4500;
+}
+
+.signup a {
+    color: #FF5733;
+}
+
+.signup a:hover {
+    color: #FF4500;
+}
+
+/* Specific styles for admin login form */
+.admin-login button {
+    background-color: #FFA500;
+}
+
+.admin-login button:hover {
+    background-color: #FF8C00;
+}
+
+.admin-login a {
+    color: #FFA500;
+}
+
+.admin-login a:hover {
+    color: #FF8C00;
+}
+
+/* Error message styles */
+.error-box {
+    background-color: #FFD1D6;
+    color: #FF4D5A;
+    border: 1px solid #FF4D5A;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 15px;
+}
